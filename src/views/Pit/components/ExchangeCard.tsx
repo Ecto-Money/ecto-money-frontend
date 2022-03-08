@@ -10,7 +10,6 @@ import useEctoFinance from '../../../hooks/useEctoFinance';
 import Label from '../../../components/Label';
 import TokenSymbol from '../../../components/TokenSymbol';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import useModal from '../../../hooks/useModal';
 import ExchangeModal from './ExchangeModal';
 import ERC20 from '../../../ecto-finance/ERC20';
@@ -74,7 +73,7 @@ const ExchangeCard: React.FC<ExchangeCardProps> = ({
               <Label text={fromTokenName} variant="normal" />
             </StyledToken>
             <StyledExchangeArrow>
-              <FontAwesomeIcon icon={faArrowRight} />
+              <FontAwesomeIcon icon="arrow-right" />
             </StyledExchangeArrow>
             <StyledToken>
               <StyledCardIcon>
