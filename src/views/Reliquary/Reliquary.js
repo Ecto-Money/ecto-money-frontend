@@ -167,7 +167,7 @@ const Reliquary = () => {
           </Box>
 
           <Box mt={5}>
-            <Grid container justify="center" spacing={3} mt={10}>
+            <Grid container justifyContent="center" spacing={3} mt={10}>
               <Button
                 disabled={stakedBalance.eq(0) || (!canWithdraw && !canClaimReward)}
                 onClick={onRedeem}

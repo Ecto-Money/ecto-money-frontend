@@ -11,7 +11,7 @@ const configurations: { [env: string]: Configuration } = {
     defaultProvider: 'https://rpc.testnet.fantom.network/',
     deployments: require('./ecto-finance/deployments/deployments.testing.json'),
     externalTokens: {
-      WFTM: ['0xf1277d1ed8ad466beddf92ef448a132661956621', 18],
+      WFTM: ['0xf1277d1Ed8AD466beddF92ef448A132661956621', 18],
       FUSDT: ['0xb7f24e6e708eabfaa9e64b40ee21a5adbffb51d6', 6],
       BOO: ['0x14f0C98e6763a5E13be5CE014d36c2b69cD94a1e', 18],
       MIM: ['0x2317610e609674e53D9039aaB85D8cAd8485A7c5', 0],
@@ -32,7 +32,7 @@ const configurations: { [env: string]: Configuration } = {
     defaultProvider: 'https://rpc.ftm.tools/',
     deployments: require('./ecto-finance/deployments/deployments.mainnet.json'),
     externalTokens: {
-      WFTM: ['0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', 18],
+      WFTM: ['0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', 18],
       FUSDT: ['0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', 6], // This is actually usdc on mainnet not fusdt
       BOO: ['0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE', 18],
       MIM: ['0x82f0B8B456c1A451378467398982d4834b6829c1', 18],
