@@ -772,7 +772,7 @@ export class EctoFinance {
     };
     return await TaxOffice.addLiquidityETHTaxFree(
       ectoAmount,
-      ectoAmount.mul(992).div(1000),
+      ectoAmount.mul(80).div(1000),
       parseUnits(ftmAmount, 18).mul(992).div(1000),
       overrides,
     );
