@@ -272,13 +272,13 @@ export class EctoFinance {
       if (!contractName.endsWith('EctoRewardPool')) {
         const rewardPerSecond = await poolContract.ectoPerSecond();
         if (depositTokenName === 'WFTM') {
-          return rewardPerSecond.mul(6000).div(11000).div(24);
-        } else if (depositTokenName === 'BOO') {
-          return rewardPerSecond.mul(2500).div(11000).div(24);
-        } else if (depositTokenName === 'MIM') {
-          return rewardPerSecond.mul(1000).div(11000).div(24);
+          return rewardPerSecond.mul(1000).div(2750).div(24);
+        } else if (depositTokenName === 'DRAUGR') {
+          return rewardPerSecond.mul(1000).div(2750).div(24);
+        } else if (depositTokenName === 'SOLID') {
+          return rewardPerSecond.mul(250).div(2750).div(24);
         } else if (depositTokenName === 'WETH') {
-          return rewardPerSecond.mul(1500).div(11000).div(24);
+          return rewardPerSecond.mul(500).div(2750).div(24);
         }
         return rewardPerSecond.div(24);
       }

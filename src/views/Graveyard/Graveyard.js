@@ -80,9 +80,12 @@ const Graveyard = () => {
                   <Typography color="textPrimary" variant="h4" gutterBottom style={{ marginTop: '20px' }}>
                     Genesis Pools
                   </Typography>
-                  <Alert variant="filled" severity="warning">
-                    Genesis Pools have ENDED. Please withdraw your funds.
-                  </Alert>
+                  {
+                    activeBanks.length <= 0 &&
+                    <Alert variant="filled" severity="warning">
+                      Genesis Pools have ENDED. Please withdraw your funds.
+                    </Alert>
+                  }
                   {/* <Typography color="textPrimary" variant="h4" gutterBottom>
                     Decentralized Initial Supply Distribution
                   </Typography> */}

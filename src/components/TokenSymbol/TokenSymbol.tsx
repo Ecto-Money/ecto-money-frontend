@@ -12,8 +12,9 @@ import tshareFtmLpLogo from '../../assets/img/eshare_ftm_lp.png';
 
 import wftmLogo from '../../assets/img/ftm_logo_blue.svg';
 import booLogo from '../../assets/img/spooky.png';
-import mimLogo from '../../assets/img/mim_logo.svg';
+import solidLogo from '../../assets/img/SOLID.svg';
 import wethLogo from '../../assets/img/weth_logo.svg';
+import draugrLogo from '../../assets/img/draugr.svg';
 
 const logosBySymbol: { [title: string]: string } = {
   //Real tokens
@@ -26,7 +27,8 @@ const logosBySymbol: { [title: string]: string } = {
   WFTM: wftmLogo,
   BOO: booLogo,
   WETH: wethLogo,
-  MIM: mimLogo,
+  SOLID: solidLogo,
+  DRAUGR: draugrLogo,
   'ECTO-FTM-LP': ectoFtmLpLogo,
   'ESHARE-FTM-LP': tshareFtmLpLogo,
 };
