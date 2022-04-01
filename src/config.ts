@@ -140,7 +140,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     finished: false,
     sort: 1,
     closedForStaking: false,
-    genesisFinished: true
+    genesisFinished: false
   },
   EctoWethRewardPool: {
     name: 'Stake wETH, earn ECTO',
@@ -153,7 +153,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     finished: false,
     sort: 2,
     closedForStaking: false,
-    genesisFinished: true
+    genesisFinished: false
   },
   EctoShibaRewardPool: {
     name: 'Stake SOLID, earn ECTO',
@@ -166,7 +166,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     finished: false,
     sort: 3,
     closedForStaking: false,
-    genesisFinished: true
+    genesisFinished: false
   },
   EctoEctoRewardPool: {
     name: 'Stake DRAUGR, earn ECTO',
@@ -179,7 +179,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     finished: false,
     sort: 4,
     closedForStaking: false,
-    genesisFinished: true
+    genesisFinished: false
   },
   EctoFtmLPEctoRewardPool: {
     name: 'Earn ECTO by ECTO-WFTM',
