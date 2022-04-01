@@ -96,13 +96,13 @@ export class EctoFinance {
   //===================================================================
 
   async getEctoStat(): Promise<TokenStat> {
-    const { EctoFtmRewardPool, EctoFtmLpEctoRewardPool } = this.contracts;
+    // const { EctoFtmRewardPool, EctoFtmLpEctoRewardPool } = this.contracts;
     const supply = await this.ECTO.totalSupply();
-    const ectoRewardPoolSupply = await this.ECTO.balanceOf(EctoFtmRewardPool.address);
-    const ectoRewardPoolSupply2 = await this.ECTO.balanceOf(EctoFtmLpEctoRewardPool.address);
-    const ectoCirculatingSupply = supply
-      .sub(ectoRewardPoolSupply)
-      .sub(ectoRewardPoolSupply2);
+    // const ectoRewardPoolSupply = await this.ECTO.balanceOf(EctoFtmRewardPool.address);
+    // const ectoRewardPoolSupply2 = await this.ECTO.balanceOf(EctoFtmLpEctoRewardPool.address);
+    const ectoCirculatingSupply = supply;
+      // .sub(ectoRewardPoolSupply)
+      // .sub(ectoRewardPoolSupply2);
     const priceInFTM = await this.getTokenPriceFromPancakeswap(this.ECTO);
     const priceOfOneFTM = await this.getWFTMPriceFromPancakeswap();
     const priceOfEctoInDollars = (Number(priceInFTM) * Number(priceOfOneFTM)).toFixed(2);
