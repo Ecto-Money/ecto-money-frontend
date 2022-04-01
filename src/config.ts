@@ -159,7 +159,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     name: 'Stake SOLID, earn ECTO',
     poolId: 2,
     sectionInUI: 0,
-    contract: '',
+    contract: 'EctoSolidGenesisRewardPool',
     depositTokenName: 'SOLID',
     earnTokenName: 'ECTO',
     multiplier: "25x",
