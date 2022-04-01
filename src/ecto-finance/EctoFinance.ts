@@ -196,12 +196,11 @@ export class EctoFinance {
   }
 
   async getEctoStatInEstimatedTWAP(): Promise<TokenStat> {
-    const { SeigniorageOracle, EctoFtmRewardPool } = this.contracts;
+    const { SeigniorageOracle } = this.contracts;
     const expectedPrice = await SeigniorageOracle.twap(this.ECTO.address, ethers.utils.parseEther('1'));
 
     const supply = await this.ECTO.totalSupply();
-    const ectoRewardPoolSupply = await this.ECTO.balanceOf(EctoFtmRewardPool.address);
-    const ectoCirculatingSupply = supply.sub(ectoRewardPoolSupply);
+    const ectoCirculatingSupply = supply;
     return {
       tokenInFtm: getDisplayBalance(expectedPrice),
       priceInDollars: getDisplayBalance(expectedPrice),
